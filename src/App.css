@@ -1,4 +1,6 @@
-
+body{
+  width: 100vw;
+}
 nav{
   background-color: #EDEFEE;
 }
@@ -142,4 +144,100 @@ footer{
   .booking-button{
     margin-top: 1rem;
   }
+}
+
+.card{
+  width:280px;
+  background-color: #E5E3E3;
+  padding: 15px 20px;
+  font-family: 'Karla', sans-serif;
+  margin: 50px 10px;
+}
+.desc{
+  font-size: 16px;
+  font-weight: 300;
+  text-indent: 15px;
+}
+.card-image{
+  width: 100%;
+  height:170px;
+}
+.item{
+  font-size: 18px;
+  font-weight: bold;
+}
+.item-price{
+  color: red;
+  float: right;
+}
+.card-bottom{
+  font-weight: 500;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+}
+.delivery-price{
+  margin-left: 1rem;
+}
+.card-grid{
+  margin: auto auto;
+  width:75%;
+  padding:0 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.homepage-header{
+  width: 80%;
+  padding-top:100px;
+  margin: auto auto;
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+}
+.homepage-header>h2{
+  font-family: 'Karla', sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  margin: auto 0;
+}
+.order-button{
+  height: 50px;
+  margin: auto auto;
+  width: 200px;
+  margin-right: 1rem;
+  color: white;
+  outline: none;
+  border: none;
+  background-color: #333333;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.homepage-header>button:active{
+  background-color: white;
+  color: #333333;
+  border: 1px solid #333333;
+}
+.testimonial{
+  background-color: #E5E3E3;
+  padding:5px 15px;
+}
+.testimonial>h1{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Karla', sans-serif;
+}
+.testimonial-card{
+  width:200px;
+  background-color: white;
+  padding: 15px 20px;
+  font-family: 'Karla', sans-serif;
+  margin: 50px 10px;
+}
+.testimonal-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.checked {
+  color: orange;
 }

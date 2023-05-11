@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../Assets/Logo.svg';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 const Nav = () => {
@@ -9,10 +9,10 @@ const Nav = () => {
     <div className='nav_section'>
      <img src={Logo} alt='little lemon logo'/>
      <ul className='menu-items'>
-       <li><Link to='/'  className='active'>Home</Link></li>
-       <li><Link to='/about'>About</Link></li>
-       <li><Link to="/reservation">Reservation</Link></li>
-       <li><Link to="/booking">Order Online</Link></li>
+       <li><NavLink to='/' exact activeClassName="active">Home</NavLink></li>
+       <li><NavLink to='/about' activeClassName="active">About</NavLink></li>
+       <li><NavLink to="/booking" activeClassName="active">Reservation</NavLink></li>
+       <li><NavLink to="/help" activeClassName="active">Help</NavLink></li>
      </ul>
     </div>
     </>

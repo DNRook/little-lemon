@@ -29,6 +29,9 @@ nav{
 .menu-items li a:hover{
   border-bottom: 2px solid black;
 }
+.menu-items li a:active{
+  border-bottom: 2px solid #F4CE14;
+}
 .active{
   border-bottom: 2px solid black;
 }
@@ -129,11 +132,15 @@ footer{
   margin-top: 2rem;
   cursor: pointer;
 }
+.booking-button:active{
+  background-color: #495E57;
+  color: #F4CE14;
+}
 .hero-img{
   width: 300px;
   margin-right: 20rem;
 }
-@media screen and (max-width:1024px){
+@media only screen and (min-width: 768px) and (max-width: 1024px){
   .hero-img{
     margin:0;
     width: 250px;
@@ -145,7 +152,43 @@ footer{
     margin-top: 1rem;
   }
 }
-
+@media only screen and (min-width: 640px) and (max-width: 768px){
+  .hero-img{
+    margin:0;
+    width: 200px;
+  }
+  .hero-content{
+    width: 90%;
+  }
+  .hero-content>p{
+    font-size: 14px;
+  }
+  .booking-button{
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 640px){
+  .hero-img{
+    margin-left:20px;
+    width: 180px;
+  }
+  .hero-content{
+    width: 100%;
+  }
+  .hero-content>h2{
+    font-size: 30px;
+  }
+  .hero-content>h3{
+    font-size: 14px;
+  }
+  .hero-content>p{
+    font-size: 12px;
+  }
+  .booking-button{
+    margin-top: 0;
+    padding:10px 25px;
+  }
+}
 .card{
   width:280px;
   background-color: #E5E3E3;
@@ -211,6 +254,11 @@ footer{
   cursor: pointer;
   font-size: 16px;
 }
+.order-button:active{
+  border:2px solid #333333;
+  background-color: white;
+  color: #333333;
+}
 .homepage-header>button:active{
   background-color: white;
   color: #333333;
@@ -240,4 +288,175 @@ footer{
 }
 .checked {
   color: orange;
+}
+@media only screen and (max-width: 640px){
+  .order-button{
+    width: 10rem;
+  }
+  .testimonial>h1{
+    font-size: 20px;
+  }
+  .desc{
+    font-size: 12px;
+  }
+  .card-container{
+   text-align: center;
+  }
+  .card-image{
+    height: 100px;
+  }
+  .item-price{
+    float: none;
+  }
+  .delivery-price{
+    margin: 0;
+  }
+}
+.about-header, .about-subheader{
+  width: 60%;
+  margin: auto auto;
+  padding: 10px 20px;
+  font-family: 'Karla', sans-serif;
+}
+.about-header{
+  font-size: 40px;
+}
+.about-subheader{
+  color: #EE9972;
+  font-size: 18px; 
+  font-weight: 500;
+}
+.about_section{
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  margin: auto auto;
+  text-indent: 10px;
+  padding:20px;
+}
+.about_section>p{
+  padding:0 20px;
+  line-height: 2;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  margin:0;
+}
+.about-img{
+  width: 300px;
+  padding:10px;
+}
+.img-grid{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px){
+  .about-header, .about-subheader{
+    width: 80%;
+  }
+  .about_section{
+    width:85%;
+  }
+}
+.form_section{
+  display: grid;
+  max-width: 400px;
+  gap:20px;
+  margin: auto auto;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  padding:25px;
+}
+
+.form_section label{
+  font-size: 18px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  text-decoration: underline;
+}
+#res-date, #guests, #occasion, #res-time{
+  outline: none;
+  border: 2px solid #333333;
+  padding:5px 25px;
+  font-family: 'Karla', sans-serif;
+  font-size: 14px;
+}
+#diet::placeholder{
+  font-family: 'Karla', sans-serif;
+  text-indent: 5px;
+}
+#diet{
+  resize: none;
+}
+input[type="submit"]{
+  color: #333333;
+  padding:15px 15px;
+  font-family: 'Karla', sans-serif;
+  background-color: #F4CE14;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+}
+input[type="submit"]:active{
+  background-color: #495E57;
+  color: white;
+}
+input[type="submit"]:disabled{
+  background-color: #495E57;
+  color: #F4CE14;
+  cursor:default;
+}
+input[type="button"]{
+  color: #333333;
+  padding:15px 25px;
+  font-family: 'Karla', sans-serif;
+  background-color: #F4CE14;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+  float: right;
+}
+input[type="button"]:hover{
+  background-color: #ac9214;
+  color: white;
+}
+input[type="button"]:active{
+  background-color: #333333;
+  color: #F4CE14;
+}
+.form-header{
+  font-family: 'Karla', sans-serif;
+  margin: 200px 0;
+  margin-bottom: 0;
+  text-align: center;
+
+  font-size: 40px;
+}
+.Help_section{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Karla', sans-serif;
+  margin-top: 150px;
+
+}
+.help{
+  width: 80%;
+  margin: auto auto;
+  margin-top:50px;
+  margin-bottom: 70px;
+}
+.help>h2{
+  text-align: center;
+}
+.help >p{
+  text-indent: 15px;
+}
+@media only screen and (min-width: 1024px){
+  .help{
+    width: 60%;
+  }
 }
